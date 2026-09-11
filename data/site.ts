@@ -7,6 +7,17 @@ export const site = {
   university: 'Adventist University of Central Africa (AUCA)',
   email: 'jeanromeo256@gmail.com',
   whatsapp: '+250 792431702',
+  profiles: [
+    { label: 'GitHub', href: 'https://github.com/jeanromeo250' },
+    {
+      label: 'Upwork',
+      href: 'https://www.upwork.com/freelancers/~013154f18a9aabc659',
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/nuwokwizerwa-jean-romeo-5a64b9428/',
+    },
+  ],
 }
 
 export const navLinks = [

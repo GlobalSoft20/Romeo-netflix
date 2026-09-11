@@ -40,7 +40,18 @@ export function Hero() {
           Available for work · {site.location}
         </div>
 
-        <div className="mt-8 grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,280px)] lg:gap-8">
+        <div className="mt-8 grid items-center gap-10 lg:grid-cols-[minmax(220px,320px)_minmax(0,1fr)] lg:gap-24">
+          <div className="relative mx-auto w-full max-w-[320px] overflow-hidden rounded-full border-[3px] border-primary bg-white aspect-square lg:mx-0">
+            <Image
+              src="/images/Romeo%20image.png"
+              alt="Jean Romeo"
+              fill
+              priority
+              sizes="(max-width: 1024px) 280px, 320px"
+              className="object-cover"
+            />
+          </div>
+
           <div>
             <h1
               className="animate-in-up min-h-[5.5rem] max-w-3xl text-balance font-display text-3xl font-bold leading-[1.08] tracking-tight sm:min-h-[7rem] sm:text-5xl md:text-6xl"
@@ -73,7 +84,7 @@ export function Hero() {
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
               >
                 Let&apos;s Talk
@@ -89,18 +100,6 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[280px] overflow-hidden border border-border bg-card">
-            <div className="relative aspect-[3/4]">
-              <Image
-                src="/images/Romeo-image.jpeg"
-                alt="Jean Romeo"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 360px"
-                className="object-cover"
-              />
-            </div>
-          </div>
         </div>
 
         <dl

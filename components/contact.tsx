@@ -84,6 +84,20 @@ export function Contact() {
                 <MapPin className="h-4 w-4 text-primary" />
                 {site.location}
               </span>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {site.profiles.map((profile) => (
+                  <a
+                    key={profile.label}
+                    href={profile.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 border border-border px-3 py-2 text-sm transition-colors hover:border-primary hover:text-primary"
+                  >
+                    {profile.label}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                ))}
+              </div>
             </Reveal>
           </div>
 

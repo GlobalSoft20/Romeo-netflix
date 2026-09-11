@@ -56,6 +56,19 @@ export function Footer() {
             >
               WhatsApp: {site.whatsapp}
             </a>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 pt-1">
+              {site.profiles.map((profile) => (
+                <a
+                  key={profile.label}
+                  href={profile.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {profile.label}
+                </a>
+              ))}
+            </div>
             <Link
               href="#home"
               className="mt-2 inline-flex w-fit items-center gap-2 border border-border px-4 py-2 text-sm transition-colors hover:border-primary hover:text-primary"
